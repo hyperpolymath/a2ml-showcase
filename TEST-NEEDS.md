@@ -37,19 +37,19 @@
 - Result: FULL COMPLIANCE. All 8 structural fields present. Well-structured manifest with 110 lines.
 
 **3. echidna (Rust — theorem prover)**
-- File: `/var/mnt/eclipse/repos/echidna/0-AI-MANIFEST.a2ml`
+- File: `/var/mnt/eclipse/repos/verification-ecosystem/echidna/0-AI-MANIFEST.a2ml`
 - Result: INCOMPLETE (3/8). Has SPDX and context/canonical but uses non-standard structure missing (manifest), (identity), (purpose), (name), (version) wrappers. Needs migration to standard A2ML format.
 
 **4. panic-attacker (Rust — security scanner)**
-- File: `/var/mnt/eclipse/repos/panic-attacker/0-AI-MANIFEST.a2ml`
+- File: `/var/mnt/eclipse/repos/games-ecosystem/panic-attacker/0-AI-MANIFEST.a2ml`
 - Result: INCOMPLETE (4/8). Has SPDX, (manifest), version, canonical but missing (identity), (purpose), (name) sections. Partially migrated format.
 
 **5. hypatia (Elixir/Rust — CI/CD scanner)**
-- File: `/var/mnt/eclipse/repos/hypatia/0-AI-MANIFEST.a2ml`
+- File: `/var/mnt/eclipse/repos/verification-ecosystem/hypatia/0-AI-MANIFEST.a2ml`
 - Result: FULL COMPLIANCE. All 8 structural fields present. 117 lines with comprehensive context tiers.
 
 **6. standards (Mixed — multi-standard monorepo)**
-- File: `/var/mnt/eclipse/repos/standards/0-AI-MANIFEST.a2ml`
+- File: `/var/mnt/eclipse/repos/developer-ecosystem/standards/0-AI-MANIFEST.a2ml`
 - Result: MINIMAL (1/8). Large file (128 lines, 4383B) but uses legacy format without standard S-expression structure. Only canonical locations present. Needs full rewrite.
 
 ### Internal test suite also passing
