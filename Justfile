@@ -7,6 +7,14 @@ import? "contractile.just"
 default:
     @just --list
 
+# Run the Idris2 test suite (ports validate.test.ts from May 2026).
+# Requires idris2 0.8.0+ on PATH. IDRIS2_PREFIX is resolved from the
+# binary location so the runner uses the right standard library copy.
+test:
+    @export IDRIS2_PREFIX="$(dirname "$(dirname "$(command -v idris2)")")" && \
+        idris2 --build a2ml-showcase-tests.ipkg && \
+        ./build/exec/a2ml-showcase-tests
+
 # Self-diagnostic — checks dependencies, permissions, paths
 doctor:
     @echo "Running diagnostics for a2ml-showcase..."
