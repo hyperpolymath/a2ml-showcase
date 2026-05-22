@@ -1,4 +1,4 @@
--- SPDX-License-Identifier: PMPL-1.0-or-later
+-- SPDX-License-Identifier: MPL-2.0
 -- Copyright (c) 2026 Jonathan D.A. Jewell (hyperpolymath) <j.d.a.jewell@open.ac.uk>
 --
 -- Port of tests/validate.test.ts to Idris2 using the panic-free
@@ -88,7 +88,7 @@ unitTests =
 
   , test "Unit: A2ML examples have SPDX headers" $ do
       content <- readFileToString "content/examples.md"
-      let n = countSubstring "SPDX-License-Identifier: PMPL-1.0-or-later" content
+      let n = countSubstring "SPDX-License-Identifier: MPL-2.0" content
       assertTrue ("should have >=4 SPDX headers, found " ++ show n) (n >= 4)
 
   , test "Unit: All content markdown files exist" $ allPass

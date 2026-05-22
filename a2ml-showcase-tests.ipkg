@@ -1,4 +1,4 @@
--- SPDX-License-Identifier: PMPL-1.0-or-later
+-- SPDX-License-Identifier: MPL-2.0
 -- a2ml-showcase Idris2 test suite. Ported from tests/validate.test.ts
 -- (Deno) in May 2026 per the panic-free estate rollout. Harness is
 -- the cladistic Test.Spec from

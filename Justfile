@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: PMPL-1.0-or-later
+# SPDX-License-Identifier: MPL-2.0
 # Justfile for a2ml-showcase
 
 # Default recipe — list available commands
@@ -58,7 +58,7 @@ assail:
 # LLM context dump
 llm-context:
     @echo "Project: a2ml-showcase"
-    @echo "License: PMPL-1.0-or-later"
+    @echo "License: MPL-2.0"
     @test -f README.adoc && head -30 README.adoc || test -f README.md && head -30 README.md || echo "No README found"
 
 
