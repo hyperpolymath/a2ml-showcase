@@ -1,0 +1,26 @@
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?logo=github)](https://github.com/sponsors/hyperpolymath)
+
+// SPDX-License-Identifier: MPL-2.0
+// Copyright (c) 2026 Jonathan D.A. Jewell (hyperpolymath)
+
+= a2ml-showcase
+
+Showcase examples and templates for A2ML (AI Attestation Markup Language).
+
+image:https://api.securityscorecards.dev/projects/github.com/hyperpolymath/a2ml-showcase/badge[OpenSSF Scorecard,link=https://securityscorecards.dev/viewer/?uri=github.com/hyperpolymath/a2ml-showcase]
+
+== About
+
+This repository contains example A2ML documents, templates, and rendered output
+demonstrating the capabilities of the A2ML format. It is a content/showcase
+repository -- there is no executable code.
+
+== Structure
+
+* `content/` -- A2ML source documents
+* `output/` -- Rendered output
+* `template.html` -- HTML rendering template
+
+== License
+
+MPL-2.0. See link:LICENSE[LICENSE].
